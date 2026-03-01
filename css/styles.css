@@ -1201,55 +1201,71 @@ footer .footer-logo {
 .tag-red { background: rgba(255,82,82,0.12); color: var(--red); border: 1px solid rgba(255,82,82,0.2); }
 .tag-yellow { background: rgba(255,215,64,0.12); color: var(--yellow); border: 1px solid rgba(255,215,64,0.2); }
 .tag-blue { background: rgba(64,196,255,0.12); color: var(--blue); border: 1px solid rgba(64,196,255,0.2); }
-
 }
+
 /* =====================================================
-   RESPONSIVE FIX – MOBILE
+   RESPONSIVE DESIGN – MOBILE
    ===================================================== */
 
 @media (max-width: 768px) {
 
-  /* Layout principal (si usas grid 2 columnas) */
+  /* ===== Layout principal ===== */
   .main-layout {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 
-  /* Match card: cambiar 3 columnas a 1 */
+  /* ===== Match card principal ===== */
   .match-teams-top {
-    grid-template-columns: 1fr !important;
-    padding: 1.5rem 1rem !important;
-    gap: 2rem !important;
+    grid-template-columns: 1fr;
     text-align: center;
+    gap: 1.8rem;
   }
 
-  /* Equipos */
   .team-col {
     width: 100%;
   }
 
+  /* ===== Tipografía balanceada ===== */
   .team-name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
-  /* VS y estadio */
-  .match-vs {
-    margin: 1.5rem 0;
+  .vs-text {
+    font-size: 1.5rem;
   }
 
-  /* Sidebar debajo del partido */
+  .stadium-info {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  /* ===== Points pill ===== */
+  .tag-pill {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  /* ===== Record text ===== */
+  .team-record {
+    font-size: 0.85rem;
+  }
+
+  /* ===== Tabs ===== */
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .tab {
+    font-size: 0.8rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  /* ===== Sidebar baja debajo ===== */
   .sidebar {
     margin-top: 2rem;
   }
 
 }
-.team-name {
-  font-size: 2rem;
-}
-
-/* Aquí pegaste el responsive */
-
-@media (max-width: 900px) {
-  .match-teams-top {
-    grid-template-columns: 1fr;
-  }
 }
