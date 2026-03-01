@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   document.getElementById("away-points").textContent =
     match.away.points + " pts";
-  
   document.getElementById("match-stadium").textContent =
-    "📍" + match.stadium;
+  "ESTADIO TEST";
 
 });
