@@ -13,9 +13,24 @@ const match = {
   stadium: "Etihad Stadium",
   status: "Upcoming"
 };
+
 function renderMatch(data) {
   document.getElementById("home-name").textContent = data.home.name;
   document.getElementById("away-name").textContent = data.away.name;
+  document.getElementById("home-points").textContent =
+    data.home.points + " pts";
+
+  document.getElementById("away-points").textContent =
+    data.away.points + " pts";
+
+  document.getElementById("home-record").textContent =
+    data.home.record;
+
+  document.getElementById("away-record").textContent =
+    data.away.record;
+}
+renderMatch(match);
+
 }
 function showTab(id, el) {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
