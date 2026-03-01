@@ -1242,4 +1242,14 @@ footer .footer-logo {
   }
 
 }
-</style>
+.team-name {
+  font-size: 2rem;
+}
+
+/* Aquí pegaste el responsive */
+
+@media (max-width: 900px) {
+  .match-teams-top {
+    grid-template-columns: 1fr;
+  }
+}
