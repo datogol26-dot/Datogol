@@ -1,35 +1,30 @@
 alert("DatoGol está funcionando");
-const match = {
-  home: {
-    name: "Manchester City",
-    points: 57,
-    record: "14W 5D 9L"
-  },
-  away: {
-    name: "Arsenal",
-    points: 60,
-    record: "16W 6D 6L"
-  },
-  stadium: "Etihad Stadium",
-  status: "Upcoming"
-};
 
-function renderMatch(data) {
-  document.getElementById("home-name").textContent = data.home.name;
-  document.getElementById("away-name").textContent = data.away.name;
-  document.getElementById("home-points").textContent =
-    data.home.points + " pts";
+document.addEventListener("DOMContentLoaded", function() {
 
-  document.getElementById("away-points").textContent =
-    data.away.points + " pts";
+  const match = {
+    home: {
+      name: "Manchester City",
+      points: 57,
+      record: "14W 5D 9L"
+    },
+    away: {
+      name: "Arsenal",
+      points: 60,
+      record: "16W 6D 6L"
+    },
+    stadium: "Etihad Stadium",
+    status: "Upcoming"
+  };
 
-  document.getElementById("home-record").textContent =
-    data.home.record;
+  function renderMatch(data) {
+    document.getElementById("home-name").textContent = data.home.name;
+    document.getElementById("away-name").textContent = data.away.name;
+  }
 
-  document.getElementById("away-record").textContent =
-    data.away.record;
-}
-renderMatch(match);
+  renderMatch(match);
+
+});
 
 }
 function showTab(id, el) {
