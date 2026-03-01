@@ -13,6 +13,10 @@ const match = {
   stadium: "Etihad Stadium",
   status: "Upcoming"
 };
+function renderMatch(data) {
+  document.getElementById("home-name").textContent = data.home.name;
+  document.getElementById("away-name").textContent = data.away.name;
+}
 function showTab(id, el) {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.atab').forEach(t => t.classList.remove('active'));
