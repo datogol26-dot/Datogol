@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
     away: {
       name: "Arsenal",
       points: 60
-    }
+    },
+    stadium:"Etihad Stadium" 
   };
 
   document.getElementById("home-name").textContent = match.home.name;
@@ -21,5 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   document.getElementById("away-points").textContent =
     match.away.points + " pts";
+  
+  document.getElementById("match-stadium").textContent =
+    "📍" + match.stadium;
 
 });
