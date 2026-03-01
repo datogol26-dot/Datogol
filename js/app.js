@@ -1,4 +1,15 @@
-alert("DatoGol está funcionando");
 document.addEventListener("DOMContentLoaded", function() {
-  alert("DOM cargado");
+
+  const match = {
+    home: {
+      name: "Manchester City"
+    },
+    away: {
+      name: "Arsenal"
+    }
+  };
+
+  document.getElementById("home-name").textContent = match.home.name;
+  document.getElementById("away-name").textContent = match.away.name;
+
 });
