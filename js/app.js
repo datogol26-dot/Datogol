@@ -1,4 +1,18 @@
-alert("DatoGol JS está funcionando");
+alert("DatoGol está funcionando");
+const match = {
+  home: {
+    name: "Manchester City",
+    points: 57,
+    record: "14W 5D 9L"
+  },
+  away: {
+    name: "Arsenal",
+    points: 60,
+    record: "16W 6D 6L"
+  },
+  stadium: "Etihad Stadium",
+  status: "Upcoming"
+};
 function showTab(id, el) {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.atab').forEach(t => t.classList.remove('active'));
