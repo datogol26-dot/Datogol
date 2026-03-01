@@ -1,3 +1,4 @@
+alert("DatoGol JS está funcionando");
 function showTab(id, el) {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.atab').forEach(t => t.classList.remove('active'));
