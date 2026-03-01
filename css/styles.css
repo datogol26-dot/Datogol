@@ -1201,4 +1201,36 @@ footer .footer-logo {
 .tag-red { background: rgba(255,82,82,0.12); color: var(--red); border: 1px solid rgba(255,82,82,0.2); }
 .tag-yellow { background: rgba(255,215,64,0.12); color: var(--yellow); border: 1px solid rgba(255,215,64,0.2); }
 .tag-blue { background: rgba(64,196,255,0.12); color: var(--blue); border: 1px solid rgba(64,196,255,0.2); }
+
+/* =========================
+   MOBILE RESPONSIVE FIX
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .match-teams-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .team-col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .match-vs {
+    margin: 1.5rem 0;
+  }
+
+  .standings {
+    margin-top: 2rem;
+  }
+
+}
+
+
 </style>
