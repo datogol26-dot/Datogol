@@ -1203,31 +1203,42 @@ footer .footer-logo {
 .tag-blue { background: rgba(64,196,255,0.12); color: var(--blue); border: 1px solid rgba(64,196,255,0.2); }
 
 }
-
-/* =========================
-   MOBILE FIX – MATCH CARD
-   ========================= */
+/* =====================================================
+   RESPONSIVE FIX – MOBILE
+   ===================================================== */
 
 @media (max-width: 768px) {
 
+  /* Layout principal (si usas grid 2 columnas) */
+  .main-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Match card: cambiar 3 columnas a 1 */
   .match-teams-top {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr !important;
+    padding: 1.5rem 1rem !important;
+    gap: 2rem !important;
     text-align: center;
-    gap: 2rem;
+  }
+
+  /* Equipos */
+  .team-col {
+    width: 100%;
   }
 
   .team-name {
     font-size: 1.8rem;
   }
 
+  /* VS y estadio */
   .match-vs {
-    order: 2;
     margin: 1.5rem 0;
   }
 
-  .team-col {
-    width: 100%;
+  /* Sidebar debajo del partido */
+  .sidebar {
+    margin-top: 2rem;
   }
 
 }
